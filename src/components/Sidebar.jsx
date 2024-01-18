@@ -11,10 +11,10 @@ const Sidebar = () => {
           <img className="h-full w-full" src={LogoOSIS} alt="Logo OSIS" />
         </div>
         <div className="flex flex-col gap-4 w-full">
-          <RouterButton href="/" icon={Gauge}>Dashboard</RouterButton>
-          <RouterButton href="/data-kandidat" icon={Users}>Data Kandidat</RouterButton>
-          <RouterButton href="/daftar-siswa" icon={Contact}>Daftar Siswa</RouterButton>
-          <RouterButton href="/tambah-data-siswa" icon={SquarePen}>Tambah Data Siswa</RouterButton>
+          <RouterButton to="/" icon={Gauge}>Dashboard</RouterButton>
+          <RouterButton to="/data-kandidat" icon={Users}>Data Kandidat</RouterButton>
+          <RouterButton to="/daftar-siswa" icon={Contact}>Daftar Siswa</RouterButton>
+          <RouterButton to="/tambah-data-siswa" icon={SquarePen}>Tambah Data Siswa</RouterButton>
         </div>
       </div>
     </aside>
