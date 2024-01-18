@@ -4,11 +4,11 @@ import NavBar from "@/components/NavBar";
 const Layout = ({ children }) => {
   return (
     <>
-      <div className="flex flex-col h-screen">
+      <div className="flex h-screen flex-col">
         <NavBar />
         <div className="flex flex-1 overflow-hidden">
           <Sidebar />
-          <main className="flex-1 py-16 px-8 overflow-y-auto">
+          <main className="flex-1 overflow-y-auto px-8 py-16">
             {children}
           </main>
         </div>

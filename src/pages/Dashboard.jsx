@@ -4,12 +4,12 @@ import Card from "@/components/Card"
 const Home = () => {
   return (
     <>
-      <h1 className="text-4xl font-bold text-gray-900 uppercase">
-        <span className="text-base text-gray-900/70 font-semibold block">Selamat Datang di</span>
+      <h1 className="text-4xl font-bold uppercase text-gray-900">
+        <span className="block text-base font-semibold text-gray-900/70">Selamat Datang di</span>
         Sistem Informasi EV-Ketos
       </h1>
 
-      <div className="grid grid-cols-4 gap-4 mt-8">
+      <div className="mt-8 grid grid-cols-4 gap-4">
         <Card icon={Table2} count="1000" text="Jumlah Pemilih" color="blue" />
         <Card icon={CheckCircle} count="900" text="Sudah Memilih" color="green" />
         <Card icon={XCircle} count="100" text="Belum Memilih" color="red" />

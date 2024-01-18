@@ -44,7 +44,7 @@ const DropdownButton = ({ children }) => {
   }
 
   return (
-    <button onClick={toggleOpen} className="rounded px-4 py-2 text-white bg-gray-800 flex items-center">
+    <button onClick={toggleOpen} className="flex items-center rounded bg-gray-800 px-4 py-2 text-white">
       { children }
       <ChevronDown className={`ml-2 ${isOpen ? "rotate-180" : "rotate-0"}`} />
     </button>
@@ -55,7 +55,7 @@ const DropdownContent = ({ children, ...props }) => {
   const { isOpen, setIsOpen } = React.useContext(DropdownContext);
   
   return (
-    <div className={`absolute z-20 rounded-sm border border-gray-300 bg-white overflow-hidden my-2 px-3 py-2 ${isOpen ? "shadow-md" : "hidden"}`}>
+    <div className={`absolute z-20 my-2 overflow-hidden rounded-sm border border-gray-300 bg-white px-3 py-2 ${isOpen ? "shadow-md" : "hidden"}`}>
       <ul onClick={() => setIsOpen(false)} className="flex flex-col gap-2 text-gray-900" {...props}>
         { children }
       </ul>
@@ -66,7 +66,7 @@ const DropdownContent = ({ children, ...props }) => {
 const DropdownItem = ({ children, icon: Icon, ...props }) => {
   return (
     <li>
-      <Link className={`px-2 py-1 rounded-sm whitespace-nowrap hover:bg-gray-400/30 ${Icon ? 'flex gap-2 items-center' : ''}`} {...props}>
+      <Link className={`whitespace-nowrap rounded-sm px-2 py-1 hover:bg-gray-400/30 ${Icon ? 'flex items-center gap-2' : ''}`} {...props}>
         {Icon && <Icon size={20} />}
         { children }
       </Link>
