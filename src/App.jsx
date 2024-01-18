@@ -9,21 +9,19 @@ import Layout from "@/layouts/index"
 const App = () => {
   return (
     <>
-      <Layout>
-        <Routes>
-          {/* Home Page */}
-          <Route path="/" element={<Dashboard />} />
+      <Routes>
+        {/* Home Page */}
+        <Route path="/" element={<Layout><Dashboard /></Layout>} />
 
-          {/* Auth page */}
-          <Route path="/login" element={<TambahDataSiswa />} />
-          <Route path="/logout" element={<TambahDataSiswa />} />
+        {/* Auth pages */}
+        <Route path="/login" element={<Dashboard />} />
+        <Route path="/logout" element={<Dashboard />} />
 
-          {/* Dashboard Page */}
-          <Route path="/data-kandidat" element={<DataKandidat />} />
-          <Route path="/daftar-siswa" element={<DaftarSiswa />} />
-          <Route path="/tambah-data-siswa" element={<TambahDataSiswa />} />
-        </Routes>
-      </Layout>
+        {/* Dashboard Page */}
+        <Route path="/data-kandidat" element={<Layout><DataKandidat /></Layout>} />
+        <Route path="/daftar-siswa" element={<Layout><DaftarSiswa /></Layout>} />
+        <Route path="/tambah-data-siswa" element={<Layout><TambahDataSiswa /></Layout>} />
+      </Routes>
     </>
   )
 }
