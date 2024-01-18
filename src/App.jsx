@@ -11,7 +11,14 @@ const App = () => {
     <>
       <Layout>
         <Routes>
+          {/* Home Page */}
           <Route path="/" element={<Dashboard />} />
+
+          {/* Auth page */}
+          <Route path="/login" element={<TambahDataSiswa />} />
+          <Route path="/logout" element={<TambahDataSiswa />} />
+
+          {/* Dashboard Page */}
           <Route path="/data-kandidat" element={<DataKandidat />} />
           <Route path="/daftar-siswa" element={<DaftarSiswa />} />
           <Route path="/tambah-data-siswa" element={<TambahDataSiswa />} />
