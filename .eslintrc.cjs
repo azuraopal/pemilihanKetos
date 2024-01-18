@@ -6,6 +6,7 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:react/jsx-runtime',
     'plugin:react-hooks/recommended',
+    'plugin:tailwindcss/recommended',
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
@@ -20,4 +21,10 @@ module.exports = {
       'off'
     ]
   },
+  overrides: [
+    {
+      files: ['*.js', '*.jsx'],
+      parser: '@typescript-eslint/parser',
+    }
+  ]
 }
