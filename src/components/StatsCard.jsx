@@ -8,15 +8,17 @@ const colorVariants = {
   pink: "bg-pink-400",
 }
 
-const Card = ({ icon: Icon, count, text, color }) => {
+const StatsCard = ({ icon: Icon, count, color, children }) => {
   return (
     <>
       <div className={`mb-6 flex items-center justify-between rounded-md p-4 ${colorVariants[color]}`}>
         <div>
           <h2 className="text-2xl font-semibold text-white">{count}</h2>
-          <p className="text-white/80">{text}</p>
+          <p className="text-white/80">
+            {children}
+          </p>
         </div>
-        <div className="right-0 text-gray-900/30">
+        <div className="text-gray-900/30">
           {Icon && <Icon size={64} />}
         </div>
       </div>
@@ -24,4 +26,4 @@ const Card = ({ icon: Icon, count, text, color }) => {
   )
 }
 
-export default Card;
+export default StatsCard;
