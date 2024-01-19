@@ -1,5 +1,5 @@
 import { Table2, Users, CheckCircle, XCircle } from "lucide-react"
-import Card from "@/components/Card"
+import StatsCard from "@/components/StatsCard"
 
 const Home = () => {
   return (
@@ -10,10 +10,10 @@ const Home = () => {
       </h1>
 
       <div className="mt-8 grid grid-cols-4 gap-4">
-        <Card icon={Table2} count="1000" text="Jumlah Pemilih" color="blue" />
-        <Card icon={CheckCircle} count="900" text="Sudah Memilih" color="green" />
-        <Card icon={XCircle} count="100" text="Belum Memilih" color="red" />
-        <Card icon={Users} count="3" text="Kandidat" color="orange" />
+        <StatsCard icon={Table2} count="1000" color="blue">Jumlah Pemilih</StatsCard>
+        <StatsCard icon={CheckCircle} count="900" color="green">Sudah Memilih</StatsCard>
+        <StatsCard icon={XCircle} count="100" color="red">Belum Memilih</StatsCard>
+        <StatsCard icon={Users} count="3" color="orange">Kandidat</StatsCard>
       </div>
     </>
   )
