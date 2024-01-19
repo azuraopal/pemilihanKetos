@@ -73,9 +73,9 @@ const DaftarSiswa = () => {
               <TableItem>{siswa.nisn}</TableItem>
               <TableItem>
                 {siswa.sudah_voting ? (
-                  <p className="w-fit rounded bg-green-400 px-2 py-1 text-xs font-bold">Sudah Voting</p>
+                  <p className="w-fit rounded bg-green-400 px-2 py-1 text-xs font-semibold">Sudah Voting</p>
                 ) : (
-                  <p className="w-fit rounded bg-red-400 px-2 py-1 text-xs font-bold">Belum Voting</p>
+                  <p className="w-fit rounded bg-red-400 px-2 py-1 text-xs font-semibold">Belum Voting</p>
                 )}
               </TableItem>
               <TableItem className="flex gap-2">
