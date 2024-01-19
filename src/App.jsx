@@ -20,7 +20,7 @@ const App = () => {
         {/* Dashboard Page */}
         <Route path="/data-kandidat" element={<Layout><DataKandidat /></Layout>} />
         <Route path="/daftar-siswa" element={<Layout><DaftarSiswa /></Layout>} />
-        <Route path="/tambah-data-siswa" element={<Layout><TambahDataSiswa /></Layout>} />
+        <Route path="/tambah-siswa" element={<Layout><TambahDataSiswa /></Layout>} />
       </Routes>
     </>
   )
