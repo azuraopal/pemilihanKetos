@@ -11,7 +11,9 @@ const Table = ({ children, className, ...props }) => {
 const TableHead = ({ children }) => {
   return (
     <thead className="bg-gray-100">
-      {children}
+      <tr>
+        {children}
+      </tr>
     </thead>
   )
 }
