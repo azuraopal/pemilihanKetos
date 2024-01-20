@@ -1,11 +1,11 @@
 const colorVariants = {
-  blue: "bg-blue-400",
-  yellow: "bg-yellow-400",
-  orange: "bg-orange-400",
-  green: "bg-green-400",
-  red: "bg-red-400",
-  purple: "bg-purple-400",
-  pink: "bg-pink-400",
+  blue: "bg-blue-500",
+  yellow: "bg-yellow-500",
+  orange: "bg-orange-500",
+  green: "bg-green-500",
+  red: "bg-red-500",
+  purple: "bg-purple-500",
+  pink: "bg-pink-500",
 }
 
 const StatsCard = ({ icon: Icon, count, color, children }) => {
