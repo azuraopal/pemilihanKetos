@@ -1,7 +1,7 @@
-import { Table2, Users, CheckCircle, XCircle } from "lucide-react"
-import StatsCard from "@/components/StatsCard"
+import { CheckCircle, Table2, Users, XCircle } from 'lucide-react'
+import StatsCard from '@/components/StatsCard'
 
-const Home = () => {
+function Home() {
   return (
     <>
       <h1 className="text-4xl font-bold uppercase text-gray-900">
@@ -19,4 +19,4 @@ const Home = () => {
   )
 }
 
-export default Home;
+export default Home

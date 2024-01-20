@@ -1,14 +1,14 @@
 const colorVariants = {
-  blue: "bg-blue-500",
-  yellow: "bg-yellow-500",
-  orange: "bg-orange-500",
-  green: "bg-green-500",
-  red: "bg-red-500",
-  purple: "bg-purple-500",
-  pink: "bg-pink-500",
+  blue: 'bg-blue-500',
+  yellow: 'bg-yellow-500',
+  orange: 'bg-orange-500',
+  green: 'bg-green-500',
+  red: 'bg-red-500',
+  purple: 'bg-purple-500',
+  pink: 'bg-pink-500',
 }
 
-const StatsCard = ({ icon: Icon, count, color, children }) => {
+function StatsCard({ icon: Icon, count, color, children }) {
   return (
     <>
       <div className={`mb-6 flex items-center justify-between rounded-md p-4 ${colorVariants[color]}`}>
@@ -26,4 +26,4 @@ const StatsCard = ({ icon: Icon, count, color, children }) => {
   )
 }
 
-export default StatsCard;
+export default StatsCard

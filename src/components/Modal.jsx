@@ -1,16 +1,17 @@
-const Modal = ({ children, isOpen }) => {
-  if (!isOpen) return;
-  
+function Modal({ children, isOpen }) {
+  if (!isOpen)
+    return
+
   return (
     <div className="fixed left-0 top-0 flex size-full items-center justify-center bg-black/80">
-      <div className="flex-0 max-w-md grow rounded-md bg-white">
+      <div className="max-w-md grow rounded-md bg-white">
         { children }
       </div>
     </div>
   )
 }
 
-const ModalHeading = ({ children, className }) => {
+function ModalHeading({ children, className }) {
   return (
     <div className={`border-b border-gray-800/50 px-4 py-2 ${className}`}>
       { children }
@@ -18,7 +19,7 @@ const ModalHeading = ({ children, className }) => {
   )
 }
 
-const ModalContent = ({ children }) => {
+function ModalContent({ children }) {
   return (
     <div className="p-4">
       { children }
@@ -26,7 +27,7 @@ const ModalContent = ({ children }) => {
   )
 }
 
-const ModalFooter = ({ children, className }) => {
+function ModalFooter({ children, className }) {
   return (
     <div className={`px-4 pb-2 ${className}`}>
       { children }

@@ -1,4 +1,4 @@
-const TambahDataSiswa = () => {
+function TambahDataSiswa() {
   return (
     <>
       <h1 className="text-4xl font-bold uppercase text-gray-900">

@@ -1,7 +1,7 @@
-import { Dropdown, DropdownButton, DropdownContent, DropdownItem } from "@/components/Dropdown"
-import { LogOut } from "lucide-react";
+import { LogOut } from 'lucide-react'
+import { Dropdown, DropdownButton, DropdownContent, DropdownItem } from '@/components/Dropdown'
 
-const NavBar = () => {
+function NavBar() {
   return (
     <>
       <div className="flex min-w-full items-center justify-between bg-slate-800 px-4 py-1">

@@ -1,5 +1,5 @@
-import antfu from "@antfu/eslint-config"
-import { FlatCompat } from "@eslint/eslintrc"
+import antfu from '@antfu/eslint-config'
+import { FlatCompat } from '@eslint/eslintrc'
 
 const compat = new FlatCompat()
 
@@ -8,23 +8,23 @@ export default antfu(
     react: true,
     stylistic: {
       indent: 2,
-      quotes: "single",
+      quotes: 'single',
       overrides: {
-        "multiline-ternary": "off"
-      }
+        'multiline-ternary': 'off',
+      },
     },
   },
   {
     rules: {
-      "react/prop-types": "off"
-    }
+      'react/prop-types': 'off',
+    },
   },
 
   // For tailwindcss class sorter.
   ...compat.config({
-    plugins: ["tailwindcss"],
+    plugins: ['tailwindcss'],
     extends: [
-      "plugin:tailwindcss/recommended"
+      'plugin:tailwindcss/recommended',
     ],
   }),
 )

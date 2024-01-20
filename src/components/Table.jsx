@@ -1,4 +1,4 @@
-const Table = ({ children, className, ...props }) => {
+function Table({ children, className, ...props }) {
   return (
     <>
       <table className={`min-w-full table-auto border-collapse ${className}`} {...props}>
@@ -8,7 +8,7 @@ const Table = ({ children, className, ...props }) => {
   )
 }
 
-const TableHead = ({ children }) => {
+function TableHead({ children }) {
   return (
     <thead className="bg-gray-100">
       <tr>
@@ -18,7 +18,7 @@ const TableHead = ({ children }) => {
   )
 }
 
-const TableHeading = ({ children }) => {
+function TableHeading({ children }) {
   return (
     <th className="border-b border-slate-800 p-2 text-left">
       {children}
@@ -26,7 +26,7 @@ const TableHeading = ({ children }) => {
   )
 }
 
-const TableBody = ({ children }) => {
+function TableBody({ children }) {
   return (
     <tbody className="divide-y divide-slate-800/50">
       {children}
@@ -34,7 +34,7 @@ const TableBody = ({ children }) => {
   )
 }
 
-const TableRow = ({ children }) => {
+function TableRow({ children }) {
   return (
     <tr>
       {children}
@@ -42,7 +42,7 @@ const TableRow = ({ children }) => {
   )
 }
 
-const TableItem = ({ children, className }) => {
+function TableItem({ children, className }) {
   return (
     <td className={`px-3 py-2 ${className}`}>
       {children}

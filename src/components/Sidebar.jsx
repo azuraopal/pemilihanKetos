@@ -1,9 +1,8 @@
-import RouterButton from "@/components/RouterButton"
-import LogoOSIS from "@/assets/Logo_OSIS.png"
+import { Contact, Gauge, Users } from 'lucide-react'
+import RouterButton from '@/components/RouterButton'
+import LogoOSIS from '@/assets/Logo_OSIS.png'
 
-import { Gauge, Users, Contact } from "lucide-react"
-
-const Sidebar = () => {
+function Sidebar() {
   return (
     <aside className="w-[280px]">
       <div className="flex min-h-full flex-col items-center gap-8 bg-slate-800 px-4 py-3">

@@ -1,7 +1,7 @@
-import Sidebar from "@/components/Sidebar";
-import NavBar from "@/components/NavBar";
+import Sidebar from '@/components/Sidebar'
+import NavBar from '@/components/NavBar'
 
-const Layout = ({ children }) => {
+function Layout({ children }) {
   return (
     <>
       <div className="flex h-screen flex-col">
@@ -16,5 +16,5 @@ const Layout = ({ children }) => {
     </>
   )
 }
-  
-export default Layout;
+
+export default Layout

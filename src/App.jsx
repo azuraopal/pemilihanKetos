@@ -1,12 +1,12 @@
-import { Routes, Route } from "react-router-dom";
-import Dashboard from "@/pages/Dashboard"
-import DataKandidat from "@/pages/DataKandidat";
-import DaftarSiswa from "@/pages/DaftarSiswa";
-import TambahDataSiswa from "@/pages/TambahDataSiswa";
+import { Route, Routes } from 'react-router-dom'
+import Dashboard from '@/pages/Dashboard'
+import DataKandidat from '@/pages/DataKandidat'
+import DaftarSiswa from '@/pages/DaftarSiswa'
+import TambahDataSiswa from '@/pages/TambahDataSiswa'
 
-import Layout from "@/layouts/index"
+import Layout from '@/layouts/index'
 
-const App = () => {
+function App() {
   return (
     <>
       <Routes>

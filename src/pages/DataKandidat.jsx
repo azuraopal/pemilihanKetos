@@ -1,42 +1,42 @@
 import {
   Table,
+  TableBody,
   TableHead,
   TableHeading,
-  TableBody,
+  TableItem,
   TableRow,
-  TableItem
-} from "@/components/Table";
+} from '@/components/Table'
 
-const DataKandidat = () => {
+function DataKandidat() {
   // Data sample buat mimik kaya API return data (ganti ini make request ke RestAPI).
   const dataKandidat = [
     {
       id: 1,
-      foto: "https://placehold.co/400",
-      nama: "Amar Ambatukam",
-      kelas: "11 PPLG 2",
-      visi: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex asperiores explicabo doloremque amet, fugit perferendis? Dignissimos sequi laudantium praesentium dolorem!",
-      misi: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex asperiores explicabo doloremque amet, fugit perferendis? Dignissimos sequi laudantium praesentium dolorem!",
-      suara: 900
+      foto: 'https://placehold.co/400',
+      nama: 'Amar Ambatukam',
+      kelas: '11 PPLG 2',
+      visi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex asperiores explicabo doloremque amet, fugit perferendis? Dignissimos sequi laudantium praesentium dolorem!',
+      misi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex asperiores explicabo doloremque amet, fugit perferendis? Dignissimos sequi laudantium praesentium dolorem!',
+      suara: 900,
     },
     {
       id: 2,
-      foto: "https://placehold.co/400",
-      nama: "Amar Ambatukam",
-      kelas: "11 PPLG 2",
-      visi: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex asperiores explicabo doloremque amet, fugit perferendis? Dignissimos sequi laudantium praesentium dolorem!",
-      misi: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex asperiores explicabo doloremque amet, fugit perferendis? Dignissimos sequi laudantium praesentium dolorem!",
-      suara: 900
+      foto: 'https://placehold.co/400',
+      nama: 'Amar Ambatukam',
+      kelas: '11 PPLG 2',
+      visi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex asperiores explicabo doloremque amet, fugit perferendis? Dignissimos sequi laudantium praesentium dolorem!',
+      misi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex asperiores explicabo doloremque amet, fugit perferendis? Dignissimos sequi laudantium praesentium dolorem!',
+      suara: 900,
     },
     {
       id: 3,
-      foto: "https://placehold.co/400",
-      nama: "Amar Ambatukam",
-      kelas: "11 PPLG 2",
-      visi: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex asperiores explicabo doloremque amet, fugit perferendis? Dignissimos sequi laudantium praesentium dolorem!",
-      misi: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex asperiores explicabo doloremque amet, fugit perferendis? Dignissimos sequi laudantium praesentium dolorem!",
-      suara: 900
-    }
+      foto: 'https://placehold.co/400',
+      nama: 'Amar Ambatukam',
+      kelas: '11 PPLG 2',
+      visi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex asperiores explicabo doloremque amet, fugit perferendis? Dignissimos sequi laudantium praesentium dolorem!',
+      misi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex asperiores explicabo doloremque amet, fugit perferendis? Dignissimos sequi laudantium praesentium dolorem!',
+      suara: 900,
+    },
   ]
 
   return (
@@ -81,4 +81,4 @@ const DataKandidat = () => {
   )
 }
 
-export default DataKandidat;
+export default DataKandidat
