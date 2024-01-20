@@ -9,13 +9,11 @@ export default antfu(
     stylistic: {
       indent: 2,
       quotes: 'single',
-      overrides: {
-        'multiline-ternary': 'off',
-      },
     },
   },
   {
     rules: {
+      "style/multiline-ternary": "off",
       'react/prop-types': 'off',
     },
   },
