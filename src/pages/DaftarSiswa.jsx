@@ -129,7 +129,7 @@ function DaftarSiswa() {
         <ModalContent>
           {modalState.edit ? (
             // Edit Modal Content
-            <form action="POST" className="space-y-2">
+            <form id="editForm" onSubmit="" className="space-y-2">
               {[
                 { label: 'Nama Siswa', field: 'nama_siswa' },
                 { label: 'Kelas', field: 'kelas' },
@@ -179,12 +179,12 @@ function DaftarSiswa() {
           </button>
           {modalState.edit
             ? (
-              <button className="inline-flex w-fit items-center rounded bg-blue-600 px-3 py-1.5 text-sm font-semibold text-white transition duration-100 hover:bg-opacity-85">
+              <button type="submit" form="editForm" className="inline-flex w-fit items-center rounded bg-blue-600 px-3 py-1.5 text-sm font-semibold text-white transition duration-100 hover:bg-opacity-85">
                 Simpan
               </button>
               )
             : (
-              <button className="inline-flex w-fit items-center rounded bg-red-600 px-3 py-1.5 text-sm font-semibold text-white transition duration-100 hover:bg-opacity-85">
+              <button type="submit" className="inline-flex w-fit items-center rounded bg-red-600 px-3 py-1.5 text-sm font-semibold text-white transition duration-100 hover:bg-opacity-85">
                 Hapus Data
               </button>
               )}
