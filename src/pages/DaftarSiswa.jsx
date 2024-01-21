@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { PenLine, Trash2, UserPlus, X } from 'lucide-react'
 
-import InputText from '@/components/InputText'
+import Input from '@/components/Input'
 import {
   Table,
   TableBody,
@@ -138,7 +138,7 @@ function DaftarSiswa() {
               ].map(({ label, field }) => (
                 <div key={field}>
                   <label htmlFor={field} className="mb-1 block text-sm font-medium leading-6 text-gray-900">{label}</label>
-                  <InputText
+                  <Input
                     type="text"
                     name={field}
                     id={field}
