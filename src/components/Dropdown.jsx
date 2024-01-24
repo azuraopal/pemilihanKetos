@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import { ChevronDown } from 'lucide-react'
 
 const DropdownContext = React.createContext({
@@ -64,10 +63,10 @@ function DropdownContent({ children, ...props }) {
 function DropdownItem({ children, icon: Icon, ...props }) {
   return (
     <li>
-      <Link className={`whitespace-nowrap rounded-sm px-2 py-1 hover:bg-gray-400/30 ${Icon ? 'flex items-center gap-2' : ''}`} {...props}>
+      <button className={`whitespace-nowrap rounded-sm px-2 py-1 hover:bg-gray-400/30 ${Icon ? 'flex items-center gap-2' : ''}`} {...props}>
         {Icon && <Icon size={20} />}
         { children }
-      </Link>
+      </button>
     </li>
   )
 }
